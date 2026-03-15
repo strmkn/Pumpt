@@ -1,6 +1,6 @@
 # Pumpt
 
-筋トレ記録と次回提案 iOS アプリのサポートページ。
+次のセットがわかる筋トレ記録アプリ。
 
-- [プライバシーポリシー](https://strmkn65-stack.github.io/RepPilot/privacy-policy)
-- サポート: pumpt@agentmail.to
+- [Privacy Policy](https://strmkn.github.io/Pumpt/privacy-policy)
+- Support: pumpt@agentmail.to

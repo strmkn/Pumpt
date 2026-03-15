@@ -1,54 +1,99 @@
 # Privacy Policy — Pumpt
 
-*Last updated: 2026-02-28*
+*Last updated: 2026-03-15*
 
 ## Overview
 
-Pumpt is a workout tracking app developed by Sotaro Makino. This policy explains what data the app collects and how it is handled.
+Pumpt is a workout tracking app developed by Sotaro Makino. This policy explains what data the app collects, how it is stored, and your choices regarding that data.
 
-## Data Collection
+## Data Stored on Your Device
 
-Pumpt does **not** collect, transmit, or share any personal data with external servers or third parties.
+The following data is stored locally on your device and is never transmitted unless you opt into social features.
 
-### Data stored on your device only
-
-| Data type | Purpose | Storage location |
-|-----------|---------|-----------------|
+| Data type | Purpose | Storage |
+|-----------|---------|---------|
 | Workout records (sets, reps, weight) | Training history and progression suggestions | Device (SwiftData) |
-| Routine templates | Quick-start workout setup | Device (SwiftData) |
-| App settings and preferences | User experience | Device (UserDefaults) |
+| Routine and plan templates | Quick-start workout setup | Device (SwiftData) |
+| App settings and preferences | User experience customization | Device (UserDefaults) |
+| Anonymous usage events | In-app analytics (e.g., feature adoption) | Device (UserDefaults) |
 
-### HealthKit
+## HealthKit
 
-Pumpt requests permission to write workout data to Apple HealthKit. This data:
+Pumpt requests permission to read and write workout data to Apple HealthKit. This data:
 
 - Is stored locally in Apple Health on your device
-- Is never transmitted to external servers
 - Is only written when you complete a workout session
-- Can be removed at any time by revoking HealthKit permissions in iOS Settings → Privacy & Security → Health → Pumpt
+- Is never transmitted to external servers by Pumpt
+- Can be revoked at any time in iOS Settings > Privacy & Security > Health > Pumpt
+
+## Social Features (Optional)
+
+If you choose to sign in (via Apple or Google), the following data is transmitted to our backend (hosted on Supabase):
+
+| Data type | Purpose |
+|-----------|---------|
+| Authentication token | Account identification |
+| Display name | Shown to Crew members |
+| Crew memberships | Managing your training groups |
+| Workout snapshots | Shared with your Crew upon workout completion |
+| Reactions (likes) | Social engagement within Crews |
+| Usage events | Aggregated analytics to improve the app |
+
+### Important notes on social data
+
+- **Crew sharing is opt-in.** You can disable auto-sharing in Settings at any time.
+- **Crews are invite-only.** Your workout data is only visible to members of Crews you have joined.
+- **No public profile.** There is no public feed or discoverability — only people you invite (or who invite you) can see your data.
+
+## Authentication
+
+Pumpt supports Sign in with Apple and Google Sign-In. We receive only the information necessary to create your account (user ID, email, and display name). We do not access your Apple ID password or Google account credentials.
 
 ## Third-Party Services
 
-Pumpt does not use any third-party analytics, advertising, or tracking SDKs.
+| Service | Purpose | Privacy policy |
+|---------|---------|----------------|
+| Supabase | Authentication, social features, analytics | [supabase.com/privacy](https://supabase.com/privacy) |
+| Apple HealthKit | Workout recording | [apple.com/privacy](https://www.apple.com/privacy/) |
+| Google Sign-In | Authentication | [policies.google.com/privacy](https://policies.google.com/privacy) |
+
+Pumpt does not use any advertising or third-party tracking SDKs.
 
 ## Data Sharing
 
-No data is shared with third parties under any circumstances.
+Your data is never sold to or shared with third parties for marketing or advertising purposes. Workout snapshots are shared only with members of your Crews.
+
+## Data Export
+
+You can export all your workout history as a CSV file from Settings > Data & Privacy at any time.
+
+## Account Deletion
+
+You can delete your account from Settings > Data & Privacy > Delete Account. This permanently removes all your server-side data, including:
+
+- Authentication records
+- Crew memberships
+- Shared workout snapshots
+- Reactions
+
+Local data on your device (workout history, routines) is not affected by account deletion and can be removed by uninstalling the app.
 
 ## Data Retention
 
-All data is stored locally on your device. Uninstalling the app removes all app data. HealthKit data written by the app remains in Apple Health unless manually deleted.
+- **Local data**: Stored on your device until you uninstall the app.
+- **Server data**: Retained until you delete your account.
+- **HealthKit data**: Remains in Apple Health unless manually deleted.
 
 ## Children's Privacy
 
-Pumpt does not knowingly collect data from children under 13.
+Pumpt does not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, please contact us to have it removed.
 
 ## Changes to This Policy
 
-If this policy changes, the updated version will be posted at this URL with a revised date.
+If this policy is updated, the revised version will be posted at this URL with an updated date.
 
 ## Contact
 
-For questions about this privacy policy, contact:
+For questions about this privacy policy:
 
-**Email**: strmkn65+Pumpt@gmail.com
+**Email**: pumpt@agentmail.to
